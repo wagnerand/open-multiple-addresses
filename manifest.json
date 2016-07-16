@@ -16,7 +16,13 @@
   "browser_action": {
     "default_popup": "popup.html",
     "default_title": "Open multiple addresses",
-    "default_icon": "popup.svg"
+    "default_icon": {
+      "16": "popup16.png",
+      "19": "popup19.png",
+      "32": "popup32.png",
+      "38": "popup38.png",
+      "64": "popup64.png"
+    }
   },
   "permissions": [
     "tabs"
