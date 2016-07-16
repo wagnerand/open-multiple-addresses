@@ -3,12 +3,14 @@ function openFromTextArea() {
     let urlsArray = urlsElem.value.split("\n");
     let absUrl = null;
     for (url of urlsArray) {
-        if (url.match(/^(https?|ftp):\/\//)) {
-            absUrl = url;
-        } else {
-            absUrl = "http://" + url;
+        if (url.length > 0) {
+            if (url.match(/^(https?|ftp):\/\//)) {
+                absUrl = url;
+            } else {
+                absUrl = "http://" + url;
+            }
+            chrome.tabs.create({url: absUrl});
         }
-        chrome.tabs.create({url: absUrl});
     }
     window.close();
 }
