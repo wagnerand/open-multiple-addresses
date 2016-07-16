@@ -4,8 +4,8 @@
   "version": "1.1.0",
   "description": "Open multiple addresses at once",
   "icons": {
-    "48": "icon48.png",
-    "96": "icon96.png"
+    "48": "img/icon48.png",
+    "96": "img/icon96.png"
   },
   "applications": {
     "gecko": {
@@ -17,11 +17,11 @@
     "default_popup": "popup.html",
     "default_title": "Open multiple addresses",
     "default_icon": {
-      "16": "popup16.png",
-      "19": "popup19.png",
-      "32": "popup32.png",
-      "38": "popup38.png",
-      "64": "popup64.png"
+      "16": "img/icon16.png",
+      "19": "img/icon19.png",
+      "32": "img/icon32.png",
+      "38": "img/icon38.png",
+      "64": "img/icon64.png"
     }
   },
   "permissions": [
