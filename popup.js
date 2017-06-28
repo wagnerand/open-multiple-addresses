@@ -28,8 +28,10 @@ document.querySelector("#openFromTextArea").addEventListener("click", function(e
 }, true);
 
 document.querySelector("#pasteAndOpen").addEventListener("click", function(event) {
-    document.querySelector("#urls").focus();
+    let textArea = document.querySelector("#urls");
+    textArea.focus();
     document.execCommand("paste");
+    textArea.value = textArea.innerHTML.replace(/<br>/g, "\n");
     openFromTextArea();
     event.preventDefault();
 }, true);
