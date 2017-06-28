@@ -26,3 +26,10 @@ document.querySelector("#openFromTextArea").addEventListener("click", function(e
     openFromTextArea();
     event.preventDefault();
 }, true);
+
+document.querySelector("#pasteAndOpen").addEventListener("click", function(event) {
+    document.querySelector("#urls").focus();
+    document.execCommand("paste");
+    openFromTextArea();
+    event.preventDefault();
+}, true);
