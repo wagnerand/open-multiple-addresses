@@ -15,14 +15,14 @@ function openFromTextArea() {
     window.close();
 }
 
-window.addEventListener("keypress", function(event) {
+document.addEventListener("keypress", (event) => {
     if ((window.navigator.platform.match("Mac") ? event.metaKey : event.ctrlKey) && (event.key == "Enter")) {
        openFromTextArea();
        event.preventDefault();
     }
 }, true);
 
-document.querySelector("#openFromTextArea").addEventListener("click", function(event) {
+document.querySelector("#openFromTextArea").addEventListener("click", (event) => {
     openFromTextArea();
     event.preventDefault();
 }, true);
