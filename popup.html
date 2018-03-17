@@ -5,8 +5,11 @@
     <title>Open Multiple Addresses</title>
     <script src="popup.js" type="text/javascript" charset="utf-8" async defer></script>
 </head>
-<body>
-    <div><textarea name="urls" autofocus="true" id="urls" placeholder="Enter one address per line" rows="10" cols="80" style="resize:none"></textarea></div>
-    <div><button name="openFromTextArea" id="openFromTextArea" type="button">Open all</button></div>
+<body style="padding: 0.5em;">
+    <div><textarea class="browser-style" name="urls" autofocus="true" id="urls" placeholder="Enter one address per line" rows="10" cols="80" style="resize:none"></textarea></div>
+    <div>
+        <button class="browser-style" name="openFromTextArea" id="openFromTextArea" type="button">Open</button>
+        <button class="browser-style" name="pasteAndOpenFromTextArea" id="pasteAndOpenFromTextArea" type="button">Paste and open</button>
+    </div>
 </body>
 </html>
