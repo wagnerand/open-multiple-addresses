@@ -26,3 +26,7 @@ document.querySelector("#openFromTextArea").addEventListener("click", (event) =>
     openFromTextArea();
     event.preventDefault();
 }, true);
+
+document.addEventListener("load", (event) => {
+    document.querySelector("#urls").focus();
+});
