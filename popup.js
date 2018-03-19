@@ -1,3 +1,5 @@
+let isMac = window.navigator.platform.match("Mac");
+
 function pasteIntoTextArea() {
     document.addEventListener("paste", (event) => {
         document.querySelector("#urls").value = event.clipboardData.getData("text");
@@ -36,7 +38,7 @@ document.querySelector("#pasteAndOpenFromTextArea").addEventListener("click", (e
 }, true);
 
 document.addEventListener("keypress", (event) => {
-    if ((window.navigator.platform.match("Mac") ? event.metaKey : event.ctrlKey) && (event.key == "Enter")) {
+    if ((isMac ? event.metaKey : event.ctrlKey) && (event.key == "Enter")) {
         if (event.shiftKey) {
             pasteIntoTextArea();
         }
@@ -45,6 +47,8 @@ document.addEventListener("keypress", (event) => {
     }
 }, true);
 
-document.addEventListener("load", (event) => {
-    document.querySelector("#urls").focus();
+document.addEventListener("DOMContentLoaded", (event) => {
+    let modifier = isMac ? "\u2318" : "\u2303";
+    document.querySelector("#openFromTextArea .text-shortcut").textContent = `${modifier}\u23ce`
+    document.querySelector("#pasteAndOpenFromTextArea .text-shortcut").textContent = `${modifier}\u21e7\u23ce`
 });
