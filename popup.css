@@ -1,0 +1,13 @@
+body {
+    padding: 0.5em;
+}
+
+textarea {
+    resize: none;
+}
+
+button .text-shortcut {
+    color: #737373;
+    font-family: "Lucida Grande", caption;
+    font-size: .847em;
+}
