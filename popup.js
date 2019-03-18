@@ -37,7 +37,7 @@ document.querySelector("#pasteAndOpenFromTextArea").addEventListener("click", (e
     openFromTextArea();
 }, true);
 
-document.addEventListener("keypress", (event) => {
+document.addEventListener("keydown", (event) => {
     if ((isMac ? event.metaKey : event.ctrlKey) && (event.key == "Enter")) {
         if (event.shiftKey) {
             pasteIntoTextArea();
