@@ -34,7 +34,6 @@ document.querySelector("#openFromTextArea").addEventListener(
   "click",
   (event) => {
     openFromTextArea();
-    event.preventDefault();
   },
   true,
 );
@@ -56,7 +55,6 @@ document.addEventListener(
         pasteIntoTextArea();
       }
       openFromTextArea();
-      event.preventDefault();
     }
   },
   true,
