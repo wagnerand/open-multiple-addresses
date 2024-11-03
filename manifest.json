@@ -1,5 +1,5 @@
 {
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "Open Multiple Addresses",
   "version": "1.4.0",
   "description": "Open multiple addresses at once",
@@ -7,13 +7,13 @@
     "48": "img/icon.svg",
     "96": "img/icon.svg"
   },
-  "applications": {
+  "browser_specific_settings": {
     "gecko": {
       "id": "webext-open-multiple@andreaswagner.org",
-      "strict_min_version": "45.0"
+      "strict_min_version": "109.0"
     }
   },
-  "browser_action": {
+  "action": {
     "default_area": "navbar",
     "default_icon": "img/icon.svg",
     "default_popup": "popup.html",
@@ -21,7 +21,7 @@
   },
   "permissions": ["clipboardRead", "tabs"],
   "commands": {
-    "_execute_browser_action": {
+    "_execute_action": {
       "suggested_key": {
         "default": "Alt+T"
       }
