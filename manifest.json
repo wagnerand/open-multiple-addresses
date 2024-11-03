@@ -1,11 +1,11 @@
 {
   "manifest_version": 2,
   "name": "Open Multiple Addresses",
-  "version": "1.3.1",
+  "version": "1.4.0",
   "description": "Open multiple addresses at once",
   "icons": {
-    "48": "img/icon-dark.svg",
-    "96": "img/icon-dark.svg"
+    "48": "img/icon.svg",
+    "96": "img/icon.svg"
   },
   "applications": {
     "gecko": {
@@ -14,19 +14,10 @@
     }
   },
   "browser_action": {
-    "browser_style": true,
+    "default_area": "navbar",
+    "default_icon": "img/icon.svg",
     "default_popup": "popup.html",
-    "default_title": "Open multiple addresses",
-    "theme_icons": [{
-        "light": "img/icon-light.svg",
-        "dark": "img/icon-dark.svg",
-        "size": 16
-      },
-      {
-        "light": "img/icon-light.svg",
-        "dark": "img/icon-dark.svg",
-        "size": 32
-      }]
+    "default_title": "Open multiple addresses"
   },
   "permissions": [
     "clipboardRead",
