@@ -15,7 +15,7 @@
   },
   "action": {
     "default_area": "navbar",
-    "default_icon": "img/icon.svg",
+    "default_icon": "img/toolbar-icon.svg",
     "default_popup": "popup.html",
     "default_title": "Open multiple addresses"
   },
