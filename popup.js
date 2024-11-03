@@ -12,7 +12,6 @@ function openFromTextArea() {
     let urlsElem = document.querySelector("#urls");
     let urlsArray = urlsElem.value.split("\n");
     let absUrl = null;
-    console.log(urlsArray)
     for (url of urlsArray) {
         if (url.length > 0) {
             url = encodeURI(url);
