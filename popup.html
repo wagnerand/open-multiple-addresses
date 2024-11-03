@@ -1,33 +1,37 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
-    <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
     <title>Open Multiple Addresses</title>
     <script src="popup.js" type="text/javascript" charset="utf-8" async defer></script>
-    <link rel="stylesheet" href="chrome://global/skin/in-content/common.css">
-    <link rel="stylesheet" type="text/css" href="popup.css">
-</head>
-<body>
-    <div><textarea class="browser-style" name="urls" autofocus="true" id="urls" placeholder="Enter one address per line" rows="10" cols="80"></textarea></div>
+    <link rel="stylesheet" href="chrome://global/skin/in-content/common.css" />
+    <link rel="stylesheet" type="text/css" href="popup.css" />
+  </head>
+  <body>
     <div>
-        <button name="openFromTextArea" id="openFromTextArea">
-            <span part="button" class="button-background labelled" type="default" size="default">
-              <label>
-                Open
-              </label>
-              <label class="text-shortcut">
-              </label>
-             </span>
-          </button>
-          <button name="pasteAndOpenFromTextArea" id="pasteAndOpenFromTextArea">
-            <span part="button" class="button-background labelled" type="default" size="default">
-              <label>
-                Paste and Open
-              </label>
-              <label class="text-shortcut">
-              </label>
-            </span>
-          </button>
+      <textarea
+        class="browser-style"
+        name="urls"
+        autofocus="true"
+        id="urls"
+        placeholder="Enter one address per line"
+        rows="10"
+        cols="80"
+      ></textarea>
     </div>
-</body>
+    <div>
+      <button name="openFromTextArea" id="openFromTextArea">
+        <span part="button" class="button-background labelled" type="default" size="default">
+          <label> Open </label>
+          <label class="text-shortcut"> </label>
+        </span>
+      </button>
+      <button name="pasteAndOpenFromTextArea" id="pasteAndOpenFromTextArea">
+        <span part="button" class="button-background labelled" type="default" size="default">
+          <label> Paste and Open </label>
+          <label class="text-shortcut"> </label>
+        </span>
+      </button>
+    </div>
+  </body>
 </html>

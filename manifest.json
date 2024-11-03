@@ -19,10 +19,7 @@
     "default_popup": "popup.html",
     "default_title": "Open multiple addresses"
   },
-  "permissions": [
-    "clipboardRead",
-    "tabs"
-  ],
+  "permissions": ["clipboardRead", "tabs"],
   "commands": {
     "_execute_browser_action": {
       "suggested_key": {
