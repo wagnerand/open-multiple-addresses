@@ -62,9 +62,7 @@ document.addEventListener(
   true,
 );
 
-document.addEventListener("DOMContentLoaded", (event) => {
-  let modifier = isMac ? "\u2318" : "\u2303";
-  document.querySelector("#openFromTextArea .text-shortcut").textContent = `(${modifier}\u23ce)`;
-  document.querySelector("#pasteAndOpenFromTextArea .text-shortcut").textContent =
-    `(${modifier}\u21e7\u23ce)`;
-});
+let modifier = isMac ? "\u2318" : "\u2303";
+document.querySelector("#openFromTextArea .text-shortcut").textContent = `(${modifier}\u23ce)`;
+document.querySelector("#pasteAndOpenFromTextArea .text-shortcut").textContent =
+  `(${modifier}\u21e7\u23ce)`;
