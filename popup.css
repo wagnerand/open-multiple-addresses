@@ -1,3 +1,8 @@
+body {
+  padding: 12px;
+}
+
 textarea {
   resize: none;
+  max-width: 100%;
 }
